@@ -1,0 +1,797 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2016-04-08 23:24:31
+ * @version $Id$
+ */
+
+@font-face{
+font-family: Mijwwz;src:url(../../fonts/迷你简娃娃篆.ttf);
+font-family: MicrosoftYaHei-Regular;src:url(../../fonts/msyh.ttf);
+font-family: MicrosoftYaHei-Regular-bd;src:url(../../fonts/msyhbd.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+#header{
+	min-width:1000px;
+	height: 629px;
+}
+.clear{
+	clear: both;
+}
+#header-top{
+	height: 125px;
+	overflow: hidden;
+}
+#top{
+	min-width: 1000px;
+	height: 45px;
+	background-color: #244d5f;
+	font-family: MicrosoftYaHei-Regular;
+}
+#top .top-nav{
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+	color: #244d5f;
+}
+/*#top .top-nav span{
+	line-height: 45px;
+}*/
+
+#top .top-nav a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+#top .top-nav ul{
+	float: left;
+	list-style: none;
+	height: 20px;
+}
+#top .top-nav ul li{
+	float: left;
+	margin-top: 11px;
+}
+.navbar-list-one{
+	height: 80px;
+	background-color: #50bbdb;
+}
+#top .top-nav ul li a{
+	line-height: 20px;
+}
+#top .top-nav ul li a:hover{
+	color: #50bbdb;
+}
+#top .top-nav .nav-list-1 .list-2{
+	margin-left: 13px;
+}
+#top .top-nav .nav-list-1 .list-3{
+	margin-left: 16px;
+}
+#top .top-nav .nav-list-1 .list-4{
+	margin-left: 75px;
+}
+#top .top-nav .nav-list-1 .list-5{
+	margin-left: 12px;
+}
+#top .top-nav .nav-list-1 .list-5 span{
+
+}
+#top .top-nav .nav-list-2{
+	float: right;
+	margin-right: 1px;
+}
+#top .top-nav .nav-list-2 .list-4{
+	margin: 13px 10px;
+	color: #fff;
+	font-size: 16px;
+}
+#top .top-nav .nav-list-2 .list-2{
+	margin-right: 25px;
+}
+#top .top-nav .nav-list-2 .list-1{
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+#top .top-navbar{
+	width: 1000px;
+	height: 83px;
+	margin: 0 auto;
+	border-bottom: 1px solid #eeeeee;
+}
+#top .top-navbar .logo-img{
+	float: left;
+}
+#top .top-navbar .logo-img img{
+	margin-top: 10px;
+}
+#top .top-navbar .navbar{
+	float: right;
+}
+#top .top-navbar .navbar ul{
+	list-style: none;
+}
+#top .top-navbar .navbar ul li{
+	float: left;
+}
+.bgc{
+	color: #ff0;
+}
+#top .top-navbar .navbar ul li a{
+	text-decoration: none;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 900;
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#top .top-navbar .navbar ul li a:hover{
+	color: #fff;
+	background-color: #50bbdb;
+	border-bottom: 1px solid #7d7a79;
+}
+.banner{
+	min-width: 100%;
+	height: 402px;
+	overflow: hidden;
+	/*background-image: url(../images/15.jpg);*/
+	/*background-size:100% 402px; 背景图自适应*/
+}
+.banner-pic li img{
+	width: 100%;
+	height: 402px;
+}
+.banner-pic li{
+	list-style: none;
+}
+.banner-one{
+	width: 100%;
+	height: 402px;
+	position: relative;
+	top: -412px;
+	z-index: 6;
+}
+.banner-one-list{
+	width: 407px;
+	height: 106px;
+	position: relative;
+	bottom:-32px;
+	left:18%;
+}
+@font-face{
+	font-family: Mijwwz;src:url(../../fonts/迷你简娃娃篆.ttf);
+}
+.banner-one-list li{
+	list-style: none;
+	font-size:39px;
+	font-family:Mijwwz;
+	color: #eb6417;
+}
+.list-one{
+	width: 407px;
+	height: 48px;
+	text-indent: -0.5em;
+}
+.list-two{
+	width: 407px;
+	height: 48px;
+	text-align:right;
+	margin-top: 5px;
+}
+.banner-one-pic2{
+	width: 150px;
+	position: relative;
+	bottom: -357px;
+	left: 45%;
+}
+.banner-one-pic2 li{
+	list-style: none;
+	float: left;
+	margin-right: 12px;
+	width: 20px;
+	height: 20px;
+	border: 0px solid; 
+	background-color: #fff;
+	border-radius:20px;
+	cursor: pointer;
+}
+.search{
+	width: 1000px;
+	height: 100px;
+	margin:0 auto;
+	margin-top: -412px;
+}
+.search-text{
+	width: 353px;
+	height:100px;
+	margin-left: 327px;
+	overflow: hidden;
+}
+.search-text ul li{
+	list-style: none;
+	height:27px;
+	width: 353px;
+	border: 2px solid #4ebbda;
+	margin-top:50px;
+}
+.search-text ul li input{
+	width:314px;
+	height: 23px;
+	border: 1px solid #4ebbda;
+	border-color: transparent;
+}
+.search-text ul li img{
+	width: 10%;
+	float: right;
+	cursor: pointer;
+}
+.search-city{
+	height: 16px;
+	margin-left: 328px;
+	margin-top:-12px;
+}
+.search-city li{
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	color:#bfbfbf;
+	padding-left: 6px; 
+}
+.search-city li a{
+	font-size: 12px;
+	color:#bfbfbf;
+	text-decoration: none;
+}
+#container{
+	min-width:1000px;
+	height: 2567px;
+}
+#container .container-top{
+	width: 326px;
+	height: 45px;
+	background-color: #535b65;
+	opacity: 0.6;
+	margin-top: 168px;
+}
+#container .container-top li{
+	list-style: none;
+	font-size: 18px;
+	font-family:MicrosoftYaHei-Regular;
+	color: #fff;
+	text-indent: 1em;
+	line-height: 45px;
+}
+#container .container-top a{
+	text-decoration: none;
+}
+#container .container-start{
+	width: 326px;
+	height: 222px;
+}
+#container .container-start-one{
+	width: 326px;
+	height: 52px;
+	background-color: #efefef;
+}
+#container .container-start-one ul{
+	height: 52px;
+	list-style: none;
+}
+#container .money{
+	margin-left: 24px;
+	line-height: 52px;
+	float: left;
+	color: #fb660c;
+	font-size: 28px;
+	font-family: MicrosoftYaHei-Regular;
+}
+#container .money span{
+	font-size: 14px;
+}
+#container .day{
+	margin-left: 41px;
+	line-height: 52px;
+	float: left;
+	color: #9f9f9f;
+	font-size: 12px;
+	font-family: MicrosoftYaHei-Regular;
+}
+#container .date{
+	margin-right: 26px;
+	line-height: 52px;
+	float: right;
+	color: #fb660c;
+	font-size: 16px;
+	font-family: MicrosoftYaHei-Regular;
+}
+#container .container-center{
+	width: 326px;
+	height: 103px;
+	overflow: hidden;
+}
+#container .container-city{
+	list-style: none;
+	text-indent: 1.8em;
+	margin-top: 21px;
+	font-size: 16px;
+	font-weight: 900;
+	font-family: MicrosoftYaHei-Regular-bd;
+	color: #333333;
+}
+#container .container-word{
+	height: 12px;
+	margin-top: 19px;
+	text-indent: 2.5em;
+	color:#9f9f9f;
+	font-size: 12px;
+	font-family:MicrosoftYaHei-Regular; 	
+}
+#container .container-word span{
+	position: relative;
+	top: 3px;
+}
+#container .container-bottom{
+	overflow: hidden;
+	width: 326px;
+	height: 38px;
+	background-image: url(../../images/tourism/1.gif);
+	background-repeat: no-repeat;
+	background-position-x:25px;
+}
+#container .container-bottom a{
+	text-decoration: none;
+}
+#container .container-add{
+	height: 12px;
+	width: 130px;
+	font-size: 12px;
+	font-family:MicrosoftYaHei-Regular;
+	color: #7a7a7a;
+	margin-top: 10px;
+	margin-left: 61px;
+}
+#container .container-review{
+	width: 81px;
+	height: 22px;
+	list-style: none;
+	margin-left: 225px;
+	margin-top: -22px;
+}
+#container .container-browes{
+	width:36px;
+	height: 15px;
+	float: left;
+	font-size: 12px;
+	color:#707070;
+	font-family:MicrosoftYaHei-Regular;
+}
+#container .container-browes span{
+	margin-left: 4px;
+}
+#container .container-browes img{
+	cursor: pointer;
+}
+#container .container-laud{
+	font-size: 12px;
+	color: #707070;
+	font-family:MicrosoftYaHei-Regular;
+	float: right;
+	width: 33px;
+	height: 22px;
+}
+#container .container-laud span{
+	margin-left: 6px;
+}
+#container .container-laud img{
+	margin-top: -2px;
+	width: 18px;
+	height: 21px;
+	cursor: pointer;
+}
+.container-first{
+	width:1000px;
+	height: 1451px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.first-word{
+	width: 1000px;
+	height: 100px;
+	overflow: hidden;
+}
+.first-word ul{
+	width: 1000px;
+	height: 32px;
+	margin-top:35px;
+}
+.first-word ul li{
+	list-style: none;
+}
+.first-word-one{
+	font-weight: 900;
+	float: left;
+	font-size: 28px;
+	font-family:MicrosoftYaHei-Regular; 
+	color: #58667d;
+}
+.first-word-two{
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	font-style:italic;
+	color: #999999;
+	font-size: 23px;
+	margin-left: 31px;
+	line-height: 40px;
+}
+.first-word-three{
+	float: right;
+	line-height: 31px;
+}
+.first-word-three a{
+	position: relative;
+	top: 14px;
+	font-weight: 700;
+	font-size: 14px;
+	font-family:MicrosoftYaHei-Regular; 
+	text-decoration: none !important;
+	color: #999999 !important;
+}
+.first-word-four{
+	border: 1px solid #9f9f9f;
+}
+.first-pic{
+	width: 1000px;
+	height: 1351px;
+	overflow:hidden;
+}
+.first-pic-one{
+	width: 1000px;
+	height: 444px;
+}
+.first-pic-one-1{
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-one-1-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/1.jpg);
+}
+.first-pic-one-2{
+	margin-left: 8px;
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-one-2-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/3.jpg);
+}
+.first-pic-one-3{
+	float: right;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-one-3-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/2.jpg);
+}
+.container-city span{
+	margin-left: 31px;
+}
+.first-pic-one-3-2-2-word{
+	text-indent: 2.5em;
+	color: #9f9f9f;
+	font-size: 12px;
+	font-family:MicrosoftYaHei-Regular; 	
+}
+.first-pic-two{
+	margin-top: 7px;
+	width: 1000px;
+	height: 444px;
+}
+.first-pic-two-1{
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-two-1-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/4.jpg);
+}
+.first-pic-two-2{
+	margin-left: 8px;
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-two-2-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/5.jpg);
+}
+.first-pic-two-3{
+	float: right;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-two-3-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/6.jpg);
+}
+.first-pic-three{
+	margin-top: 7px;
+	width: 1000px;
+	height: 444px;
+}
+.first-pic-three-1{
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-three-1-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/7.jpg);
+}
+.first-pic-three-2{
+	margin-left: 8px;
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-three-2-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/8.jpg);
+}
+.first-pic-three-3{
+	float: right;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.first-pic-three-3-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/9.jpg);
+}
+.container-second{
+	width: 1000px;
+	height: 1027px;
+	margin:0 auto;
+}
+.second-word{
+	width: 1000px;
+	height: 128px;
+	overflow: hidden;
+}
+.second-word ul{
+	width: 1000px;
+	height: 32px;
+	margin-top: 58px;
+}
+.second-word ul li{
+	list-style: none;
+}
+.second-word-one{
+	float: left;
+	font-size: 28px;
+	font-family:MicrosoftYaHei-Regular; 
+	color: #58667d;
+}
+.second-word-two{
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	font-style:italic;
+	color: #999999;
+	font-size: 23px;
+	margin-left: 31px;
+	line-height: 31px;
+}
+.second-word-three{
+	float: right;
+	color: #999999;
+	line-height: 31px;
+	font-family:MicrosoftYaHei-Regular; 
+}
+.second-pic{
+	width: 1000px;
+	height: 899px;
+	overflow:hidden;
+}
+.second-pic-one{
+	width: 1000px;
+	height: 444px;
+}
+.second-pic-one-1{
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-one-1-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/12.jpg);
+}
+.second-pic-one-2{
+	margin-left: 8px;
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-one-2-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/11.jpg);
+}
+.second-pic-one-3{
+	float: right;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-one-3-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/10.jpg);
+}
+.second-pic-two{
+	margin-top: 7px;
+	width: 1000px;
+	height: 444px;
+}
+.second-pic-two-1{
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-two-1-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/20.jpg);
+}
+.second-pic-two-2{
+	margin-left: 8px;
+	float: left;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-two-2-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/19.jpg);
+}
+.second-pic-two-3{
+	float: right;
+	width: 326px;
+	height: 444px;
+	border: 1px solid #d1cfcf;
+}
+.second-pic-two-3-1{
+	overflow: hidden;
+	width: 326px;
+	height: 222px;
+	background-image: url(../../images/tourism/18.jpg);
+}
+#footer{
+	min-width: 1000px;
+	background-color: #444b55;
+	height: 50px;
+	font-family: MicrosoftYaHei-Regular;
+}
+#footer .footer-list ul{
+	width: 1000px;
+	list-style: none;
+	height: 50px;
+	margin: 0 auto;
+}
+#footer .footer-list ul li{
+	float: left;
+	margin: 0 60px;
+}
+#footer .footer-list ul li a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+}
+#footer .footer-list ul li a:hover{
+	color: #cecccc;
+}
+#footer .copyright{
+	height: 40px;
+	background-color: #565d65;
+	font-size: 18px;
+	font-family: MicrosoftYaHei-Regular;
+	line-height: 40px;
+	text-align: center;
+}
+#footer .copyright span{
+	margin-right: 30px;
+	color: #fff;
+}
+/*城市切换*/
+#change-city{
+	width: 706px;
+    height: 105px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0CC;
+	position:absolute;
+	top:45px;
+	left:14%;
+	z-index: 99;
+	display: none;
+}
+#change-city p {
+    font-size: 15px;
+    font-family: "微软雅黑";
+    margin-top: 10px;
+    margin-left: 30px;
+    display: block;
+    width: 50px;
+    float: left;
+}
+#city-list-1 {
+    float: left;
+    width: 600px;
+    height: 100px;
+    margin-top: 10px;
+}
+.city-list-add {
+    float: left;
+    position: relative;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #50B8D8;
+    display: block;
+    height: 22px;
+    width: 66px;
+    text-align: center;
+    cursor: pointer;
+}
+.city-list-add a{
+	color: #50B8D8;
+	font-family: "微软雅黑";
+	text-decoration: none ! important;
+}

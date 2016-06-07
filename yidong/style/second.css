@@ -1,0 +1,148 @@
+@font-face{
+	font-family: myFont;
+	src:url(../fonts/STHeiti-Light.ttc);
+}
+.clearfix:before,.clearfix:after{
+	display: block;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+#wrap{
+	background-color: #f1f1f1;
+}
+#wrap header{
+	padding-top: 0.1rem;
+	line-height: 0.35rem;
+	background-color: #50bbdb;
+	margin-bottom: 0.03rem;
+}
+header a:first-child{
+	display: block;
+	width: 5%;
+	position: absolute;
+	left: 4.6875%;
+}
+header a img{
+	width: 100%;	
+}
+header a:last-child{
+	display: block;
+	position: absolute;
+	right: 2.6875%;
+	top:0.35rem;
+	width: 8.125%;
+}
+header div{ 
+	width:100%;
+	background-color: #50bbdb;
+}
+header h1{
+	font-family: myFont;
+	width: 31.9375%;
+	margin: 0 auto;
+	font-size:0.28rem;
+}
+header p{
+	font-family: myFont;
+	width:18.75%;
+	margin: 0 auto;
+	font-size: 0.18rem;
+}
+/*header*/
+.pic{
+	width: 100%;
+	background-color: #fff;
+}	
+.even{
+	margin-bottom: 0.16rem;
+}
+.pic div:first-child{
+	width: 29.125%;
+	float: left;
+}
+.check-images{
+	width: 100%;
+}
+.check-three{
+	max-width:100%;
+	font-size: 0.18rem;
+	line-height: 0.3rem;
+	margin-top: -0.3rem;
+	text-align: center;
+	background-color: #586577;
+	opacity:0.5;
+	color:#fff;
+	font-family: myFont;
+}
+.pic div:last-child{
+	float: right;
+	width: 70%;
+}
+.pic div:last-child ul li{
+	list-style: none;
+	font-size:0.24rem;
+	font-family: myFont; 
+	line-height: 0.42rem;
+	/*text-align: center;*/
+	color: #333333;
+}
+.pic div:last-child ul li span:first-child{
+	font-weight: 600;
+}
+.pic div:last-child ul li span:last-child{
+	font-size: 0.2rem;
+	color: #b8b8b8;
+/*	margin-left: -2.1rem;*/
+}
+.check-pic{
+	width: 7.1258%;
+	float: left;
+
+}
+.check-one{
+	padding: 0 0.05rem;
+	float: left;
+	line-height: 0.4rem;
+	font-size: 0.18rem;
+	color: #333333;
+	font-family: myFont; 
+}
+.check-two{
+	padding: 0 0.2rem;
+	line-height: 0.4rem;
+	float: right;
+	font-size: 0.28rem;
+	color: #ea561d;
+	font-family: myFont; 
+}
+.only{
+	border-bottom: 1px solid #d2d2d2;
+}
+/*footer*/
+.pages-bottom{
+	width: 100%;
+	background-color: #fff;
+}
+.fig{
+	width: 20.9375%;
+	float: left;
+	margin-right: 0.26rem;
+	padding-bottom: 0.08rem;
+}
+figure img{
+	padding-top: 0.08rem;
+	display: block;
+	margin: 0 auto;
+	width: 38.0597%;
+}
+figcaption a{
+	font-family: myFont;
+	padding-top: 0.1rem;
+	display: block;
+	text-align: center;
+	font-size: 0.20rem;
+	color: #333333;
+	text-decoration:none;
+}

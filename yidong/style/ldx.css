@@ -1,0 +1,116 @@
+.clearfix:before,.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+@font-face{
+	font-family: myFont;
+	src:url(../fonts/STHeiti-Light.ttc);
+}
+.top img{
+	width: 0.44rem;
+	position:absolute;
+	left: 0.45rem;
+	top:0.2rem;
+}
+h1{
+	font-family: myFont;
+	font-size: 0.28rem;
+	line-height: 0.88rem;
+	text-align: center;
+	color: #fff;
+	background-color: #50bbdb;
+}
+.top-word{
+	font-family: myFont;
+	font-size: 0.245rem;
+	line-height: 0.68rem;
+	background-color: #ededed;
+} 
+.top-word span{
+	color: #d5d5d5;
+}
+.banner-top{
+	width:91%;
+	margin: 0.14rem auto;
+}
+.banner-top img{
+	float: left;
+	width:27.0072%;
+}
+.banner-top h2{
+	float:left;
+	font-family: myFont;
+	font-size: 0.28rem;
+	color: #333333;
+	/*text-decoration: underline;*/
+	border-bottom:1px solid #d8d8d8;
+	line-height: 0.7rem;
+	margin-top: 0.4rem;
+	margin-left: 0.5rem;
+}
+.banner-down{
+	width:91%;
+	margin: 0 auto;
+	font-family: myFont;
+	font-size: 0.2rem;
+	border: 1px solid #eeeeee;
+	margin-bottom: 0.36rem;
+}
+.content-up-one{
+	margin-top: 0.1rem;
+	width:96.875%;
+	margin: 0 auto;
+}
+.content-up-one img{
+	width: 100%;
+	margin-top: -0.5rem;
+}
+.content-up-one p:first-child{
+	line-height: 0.46rem;
+	background-color: #8d8b87;
+	padding-left: 0.3rem;
+	opacity: 0.5;
+	font-family: myFont;
+	font-size: 0.24rem;
+	color: #fff;
+}
+.content-up-one p:nth-child(3){
+	margin-top: -0.33rem;
+	line-height: 0.34rem;
+	background-color: #8f8f8f;
+	padding-left: 0.3rem;
+	opacity: 0.7;
+	font-family: myFont;
+	font-size: 0.2rem;
+	color: #fff;
+	overflow: hidden;
+}
+.content-up-one div{
+	width: 15.9375%;
+	line-height:0.5rem;
+	border:0.04rem solid #fff;
+	background-color: #eb6417;
+	border-radius:0.6rem 0.6rem 0 0;
+	text-align: center;
+	position: relative;
+	float: right;
+	margin-top: -0.56rem;
+}
+.content-up-one div span{
+	font-size: 0.18rem;
+	color: #fff;
+}
+.content-up-one div .word{
+	font-size: 0.1rem;
+}
+.content-down{
+	margin-top: 0.1rem;
+	display:block;
+	font-size: 0.2rem;
+	text-decoration: none;
+	line-height: 0.68rem;
+	text-align: center;
+	background-color: #f1f1f1;
+	color: #666666;
+}

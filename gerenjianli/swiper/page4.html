@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="style/swiper-3.3.1.min.css">
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		html,body,.swiper-container{
+			height:100%;
+
+		}
+		.swiper-container{
+			font-size: 0.5rem;
+		}
+		.swiper-slide{
+			height:100%;
+			text-align: center;
+		}
+		.blue{
+			background-color: blue;
+		}
+		.red{
+			background-color: red;
+		}
+		.yellow{
+			background-color: yellow;
+		}
+		.green{
+			background-color: green;
+		}
+		.aaa{
+			position: relative;
+		}
+		.swiper-pagination{
+			width:100%;
+			bottom:0;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 最外层容器可以自行命名 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide blue">
+				<h1>欢迎</h1>
+				<h2>这是第一页</h2>
+			</div>
+			<div class="swiper-slide red"><h1>第二页</h1></div>
+			<div class="swiper-slide yellow"><h1>第三页</h1></div>
+			<div class="swiper-slide green">
+				<h1>第四页</h1>
+				<h2><a class="link" href="index.html">跳转到首页</a></h2>
+			</div>
+		</div>
+		 <div class="swiper-pagination"></div>
+	</div>
+	<script type="text/javascript" src="script/fontsizeset.js"></script>
+	<script type="text/javascript" src="script/swiper.min.js"></script>
+	<script type="text/javascript">
+		var mySwiper = new Swiper(".swiper-container",{
+			autoplay:5000,  //自动播放
+			pagination:".swiper-pagination"
+		})
+	</script>
+</body>
+</html>

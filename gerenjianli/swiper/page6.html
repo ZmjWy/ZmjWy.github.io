@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="style/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="style/animate.min.css">
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		html,body,.swiper-container{
+			height:100%;
+			font-size: 20px
+		}
+		.swiper-slide{
+			height:100%;
+			text-align: center;
+		}
+		.blue{
+			background-color: blue;
+			color:#fff;
+		}
+		.blue img{
+			display: block;
+			width:50%;
+			margin:0 auto;
+		}
+		.red{
+			background-color: red;
+		}
+		.yellow{
+			background-color: yellow;
+		}
+		.yellow p{
+			margin-top:0.3rem;
+		}
+		.green{
+			background-color: green;
+		}
+		.aaa{
+			position: relative;
+		}
+		.swiper-pagination{
+			width:100%;
+			bottom:0;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<!-- 最外层容器可以自行命名 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide blue">
+				<img class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s" src="images/yao.jpg" alt="">
+				<h1 >大家好</h1>
+				<h2 class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="3s">我是</h2>
+				<h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5s">姚小明</h2>
+			</div>
+			<div class="swiper-slide red">
+				<h1>个人简介</h1>
+				<p class="ani" swiper-animate-effect="wobble" swiper-animate-duration="0.5s" swiper-animate-delay="1s">我是一个勤奋好学的学生，技术能力，为人也不错。</p>
+			</div>
+			<div class="swiper-slide yellow">
+				<h1>我的技能</h1>
+				<p class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1s">精通html css javascript</p>
+				<p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="3s">精通各种前端框架各种库</p>
+				<p class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="5s">精通各种前端开发工具</p>
+				<p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="7s">什么都精通</p>
+			</div>
+			<div class="swiper-slide green">
+				<h1>我的项目</h1>
+				<h2  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s"><a class="link" href="index.html">项目传送门</a></h2>
+			</div>
+		</div>
+		 <div class="swiper-pagination"></div>
+	</div>
+	<script type="text/javascript" src="script/fontsizeset.js"></script>
+	<script type="text/javascript" src="script/swiper.min.js"></script>
+	<script type="text/javascript" src="script/swiper.animate1.0.2.min.js"></script>
+	<script type="text/javascript">
+		var mySwiper = new Swiper(".swiper-container",{
+			autoplay:5000,  //自动播放
+			pagination:".swiper-pagination",
+			onInit: function(swiper){ 
+		    	swiperAnimate(swiper); 
+		 	}, 
+			onSlideChangeEnd: function(swiper){ 
+				swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			}
+		})
+	</script>
+</body>
+</html>

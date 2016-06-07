@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>自驾团页面</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="style/tourism/tourism.css" rel="stylesheet">
+<link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+	<div id="header">
+		<!-- 城市切换 -->
+	<div id="change-city">
+		<p>全国：</p>
+		<ul id="city-list-1">
+			<li class="city-list-add"><a href="details.html">北京</a></li>
+			<li class="city-list-add">天津</li>
+			<li class="city-list-add">河北</li>
+			<li class="city-list-add">山西</li>
+			<li class="city-list-add">内蒙古</li>
+			<li class="city-list-add">辽宁</li>
+			<li class="city-list-add">吉林</li>
+			<li class="city-list-add">黑龙江</li>
+			<li class="city-list-add">上海</li>
+			<li class="city-list-add">江苏</li>
+			<li class="city-list-add">浙江</li>
+			<li class="city-list-add">安徽</li>
+			<li class="city-list-add">福建</li>
+			<li class="city-list-add">江西</li>
+			<li class="city-list-add">山东</li>
+			<li class="city-list-add">河南</li>
+			<li class="city-list-add">湖北</li>
+			<li class="city-list-add">湖南</li>
+			<li class="city-list-add">广东</li>
+			<li class="city-list-add">广西</li>
+			<li class="city-list-add">海南</li>
+			<li class="city-list-add">重庆</li>
+			<li class="city-list-add">四川</li>
+			<li class="city-list-add">贵州</li>
+			<li class="city-list-add">云南</li>
+			<li class="city-list-add">西藏</li>
+			<li class="city-list-add">陕西</li>
+			<li class="city-list-add">甘肃</li>
+			<li class="city-list-add">青海</li>
+			<li class="city-list-add">宁夏</li>
+			<li class="city-list-add">新疆</li>
+		</ul>
+	</div>
+	<!-- 表单验证 -->
+	<div class="modal fade" id="myModal">
+  		<div class="modal-dialog modal-dialog-width">
+    		<div class="modal-content">
+      			<div class="modal-header">
+      				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      				<div class="modal-header-in">
+      					<img src="images/login-logo.gif" alt="">
+      				</div>
+
+     			  </div>
+            <div class="modal-body">
+            	<div class="modal-body-in">
+                <a href="#" data-toggle="modal" data-target="#VipLogin" data-dismiss="modal">会员登录</a>
+            		<input type="text" class="modal-body-input" placeholder="&nbsp;&nbsp;邮箱/手机/用户名">
+            		<input type="password" class="modal-body-input" placeholder="&nbsp;&nbsp;密码">
+            		<button type="button" class="btn btn-primary btn-login" data-dismiss="modal">登陆</button>
+            		<a href="#">忘记密码</a>
+            		<span class="free-signin">还没有账号？<a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal" type="button">免费注册</a></span>
+                <div class="clear"></div>
+            		<div class="modal-footer-in">
+            			<div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+            			<br>
+            			<button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+            		</div>
+              </div>
+          </div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="signIn">
+	  <div class="modal-dialog modal-dialog-width">
+	      <div class="modal-content modal-content-signIn">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+	          <div class="modal-header-in">
+	            <img src="images/login-logo.gif" alt="爱自驾">
+	          </div>
+	        </div>
+	        <div class="modal-body modal-body-signIn">
+	          <a href="#" class="modal-body-signIn-byPhone">用手机注册</a>
+	          <div class="clear"></div>
+	          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;请输入邮箱">
+	          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;密码">
+	          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;设置密码">
+	          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入密码">
+	          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入邀请码，可不填">
+	          <div class="modal-body-signIn-agreement">
+	            <span>注册视为同意<a href="#">《爱自驾用户使用协议》</a></span>
+	            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">注册</button>
+	          </div>
+	          <div class="modal-footer-in">
+	            <div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+	            <br>
+	            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+	          </div>
+	        </div>
+	      </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div>
+
+	<div class="modal fade" id="VipLogin">
+	  <div class="modal-dialog modal-dialog-Vip-width">
+	      <div class="modal-content modal-content-Vip">
+	        <div class="modal-left">
+	          <div class="modal-left-header">
+	            <span>会员登陆</span>
+	          </div>
+	          <div class="modal-left-contant">
+	            <div class="modal-left-contant-sign">
+	              <div class="modal-left-contant-sign-name">
+	                <span>会员名：</span>
+	              </div>
+	              <div class="modal-left-contant-sign-password">
+	                <span>登陆密码：</span>
+	              </div>
+	              <div class="modal-left-contant-sign-match">
+	                <span>验证码：</span>
+	              </div>
+	            </div>
+	            <div class="modal-left-contant-input">
+	              <input type="text" class="modal-left-contant-input-name">
+	              <input type="password" class="modal-left-contant-input-password">
+	              <div class="modal-left-contant-input-match">
+	                <span>点击显示</span>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="modal-left-footer">
+	            <input type="checkbox" class="modal-left-footer-checkbox">
+	            <div class="modal-left-footer-checkbox-ex">
+	              <span>两周内自动登陆</span>
+	              <a href="#">忘记密码？</a>
+	            </div>
+	            <div class="clear"></div>
+	            <div class="modal-left-footer-login">
+	              <a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal">没有用户名？立即注册！</a>
+	              <button type="button" class="btn btn-primary"  data-dismiss="modal">立即登录</button>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="modal-right">
+	          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+	          <div class="modal-right-contant">
+	            <span>非会员预定</span>
+	            <button type="button" class="btn btn-primary"  data-dismiss="modal">不登录，直接预定></button>
+	          </div>
+	        </div>
+	      </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div id="header-top">
+		<div id="top">
+			<div class="top-nav">
+				<ul class="nav-list-1">
+					<li class="list-1"><a href="#"><img class="bgc bgc-list-1" src="images/tourism/nav-location.png" alt="location"></a></li>
+					<li class="list-2"><a id="list-2-city" href="#">北京</a></li>
+					<li class="list-3"><a id="list-3-change" href="#">切换</a></li>
+					<li class="list-4"><a href="#"><img class="bgc bgc-list-4" src="images/tourism/nav-phone.png" alt="location"></a></li>
+					<li class="list-5"><a href="#">下载手机<span>APP</span></a></li>
+				</ul>
+				<ul class="nav-list-2">
+					<li class="list-1"><a href="#"><img class="pic-list-1" src="images/topico3.png"></a></li>
+					<li class="list-2"><a href="#"><img class="pic-list-2" src="images/tourism/nav-sina.png"></a></li>
+					<li class="list-3"><a data-toggle="modal" data-target="#myModal">登录</a></li>
+					<li class="list-4">｜</li>
+					<li class="list-5"><a data-toggle="modal" data-target="#signIn">注册</a></li>
+				</ul>
+			</div>
+			<div class="top-navbar">
+				<div class="logo-img">
+					<img src="images/tourism/logo.png">
+				</div>
+				<div class="navbar">
+					<ul class="navbar-list">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">目的地</a></li>
+						<li><a href="#">线路</a></li>
+						<li><a href="#">定制</a></li>
+						<li class="navbar-list-one"><a href="#">自驾团</a></li>
+						<li><a href="#">摄影</a></li>
+						<li><a href="#">互动</a></li>
+						<li><a href="#">精选</a></li>
+						<li><a href="#">预定</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			</div>
+		<div class="banner">
+			<ul class="banner-pic">
+				<li><img src="images/tourism/15.jpg" alt=""></li>
+				<li><img src="images/tourism/16.jpg" alt=""></li>
+				<li><img src="images/tourism/15.jpg" alt=""></li>
+				<li><img src="images/tourism/16.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="banner-one">
+			<ul class="banner-one-pic2">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="banner-one-list">
+				<li
+				class="list-one">自驾团</li>
+				<li
+				class="list-two">随你畅游世界</li>
+			</ul>
+		</div>
+		<div class="search">
+			<div class="search-text">
+				<ul>
+					<li>
+						<input class="search-text-btn" type="text">
+						<img class="search-text-pic" src="images/tourism/17.jpg"><a href=""></a>
+					</li>
+					<!-- 链接 -->
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<ul class="search-city">
+				<li>热门搜索：</li>
+				<li><a href="details.html">北京</a></li>
+				<li><a href="#">西安</a></li>
+				<li><a href="#">天津</a></li>
+				<li><a href="#">上海</a></li>
+				<li><a href="#">杭州</a></li>
+				<li><a href="#">青海</a></li>
+				<li><a href="#">西藏</a></li>
+				<li><a href="#">云南</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="container">
+		<div class="container-first">
+			<div class="first-word">
+				<ul>
+					<li class="first-word-one">境内</li>
+					<li class="first-word-two">Territory</li>
+					<li class="first-word-three"><a href="domestic-list.html">更多>></a></li>
+					<!-- 链接 -->
+					<li class="clear"></li>
+					<li class="first-word-four"></li>
+				</ul>
+			</div>
+			<div class="first-pic">
+				<div class="first-pic-one">
+					<div class="first-pic-one-1">
+						<div class="first-pic-one-1-1">
+							<ul class="container-top">
+								<a href="details.html"><li>云南落地自驾行摄之旅</li></a>	
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">4580<span>起</span></li>
+									<li class="day">2015-12-17出发</li>
+									<li class="date">7天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">昆明一建水一元阳一元江一玉溪一东川</li>
+									<li class="container-word">壮美东川 , 光影元阳</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="leader.html"><p class="container-add">中国自驾游联盟南京站</p></a>
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-one-2">
+						<div class="first-pic-one-2-1">
+							<ul class="container-top">
+								<a href="#"><li>食在广东 粤菜美食六日自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">3680<span>起</span></li>
+									<li class="day">2015-12-29出发</li>
+									<li class="date">6天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">广州一开平一番禺一深圳</li>
+									<li class="container-word">领略岭南风光 , 品味地道美食</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">中国自驾游联盟南京站</p></a>
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-one-3">
+						<div class="first-pic-one-3-1">
+							<ul class="container-top">
+								<a href="#"><li>冰雪圣地呼伦贝尔 冬季那达慕自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">3880<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">7天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">海拉尔一呼和诺尔一冷极村一敖鲁古雅<br>  <span>冰雪</span></li>
+									<li class="first-pic-one-3-2-2-word">冰雪盛宴 , 冬季那达慕</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">中国自驾游联盟南京站</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="first-pic-two">
+					<div class="first-pic-two-1">
+						<div class="first-pic-two-1-1">
+							<ul class="container-top">
+								<a href="#"><li>恋上那片海 风情涠洲岛5日自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">1780<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">5天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">重庆一南宁一涠洲岛一北海</li>
+									<li class="container-word">中国最美的十大海之一</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">重庆迦南自驾俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-two-2">
+						<div class="first-pic-two-2-1">
+							<ul class="container-top">
+								<a href="#"><li>海天佛国 普陀山祈福之旅</li></a>
+								
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">1280<span>起</span></li>
+									<li class="day">2015-01-03出发</li>
+									<li class="date">3天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">南京一朱家尖一普陀山一宁波</li>
+									<li class="container-word">海天佛国 , 南海圣境</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">中国自驾游联盟南京站</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-two-3">
+						<div class="first-pic-two-3-1">
+							<ul class="container-top">
+								<a href="#"><li>小资圣地泸沽湖5日自驾</li></a>	
+							</ul>
+						</div>
+						<div class="container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">1680<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">5天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">重庆一雅安一西昌一盐源一泸沽湖</li>
+									<li class="container-word">如诗如梦深蓝水 , 小资圣地泸沽湖</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">重庆迦南自驾俱乐部</p></a>
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="first-pic-three">
+					<div class="first-pic-three-1">
+						<div class="first-pic-three-1-1">
+							<ul class="container-top">
+								<a href="#"><li>长白山雪乡冰雪温泉9日自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">4980<span>起</span></li>
+									<li class="day">2015-12-26出发</li>
+									<li class="date">9天</li>
+								</ul>
+							</div>
+							<div  class="container-center">
+								<ul>
+									<li class="container-city">北京一长白山一敦化一雪乡一哈尔滨</li>
+									<li class="container-word">梦幻如雪，北国神话<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">北京969汽车俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-three-2">
+						<div class="first-pic-three-2-1">
+							<ul  class="container-top">
+								<a href="#"><li>舌尖上的查干湖冬捕美食之旅</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">3280<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">6天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">北京一松原市一雾凇岛一雪谷一雪乡</li>
+									<li class="container-word">体验如同童话世界一样的美景<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">携友同行汽车俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="first-pic-three-3">
+						<div class="first-pic-three-3-1">
+							<ul class="container-top">
+								<a href="#"><li>贵州黄果树·南江大峡谷6日自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">2580<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">6天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">成都一遵义一贵阳一黄果树一赤水</li>
+									<li class="container-word">黄果书、南江大峡谷、龙宫、赤水</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">成都心启点自驾俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-second">
+			<div class="second-word">
+				<ul>
+					<li class="first-word-one">境外</li>
+					<li class="first-word-two">Abroad</li>
+					<li class="first-word-three"><a href="other-search.html">更多>></a></li> 
+			      <!-- 链接 -->
+			      	<li class="clear"></li>
+					<li class="first-word-four"></li>	
+				</ul>
+			</div>
+			<div class="second-pic">
+				<div class="second-pic-one">
+					<div class="second-pic-one-1">
+							<div class="second-pic-one-1-1">
+							<ul class="container-top">
+								<a href="#"><li>澳洲大洋路精彩自驾之旅11日</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">17800<span>起</span></li>
+									<li class="day">2015-01-02出发</li>
+									<li class="date">11天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">墨尔本一大洋路一堪培拉一悉尼</li>
+									<li class="container-word">大洋路深度探索野性澳洲风情<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">七十迈国际自驾</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second-pic-one-2">
+						<div class="second-pic-one-2-1">
+							<ul class="container-top">
+								<a href="#"><li>新西兰南北双岛14日奇幻自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">19800<span>起</span></li>
+									<li class="day">2015-01-02出发</li>
+									<li class="date">14天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">奥克兰一皇后镇一蒂阿瑙一基督城</li>
+									<li class="container-word">长白云之乡、地球上最后一片净土<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">七十迈国际自驾</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second-pic-one-3">
+							<div class="second-pic-one-3-1">
+							<ul class="container-top">
+								<a href="#"><li>柬埔寨落地9日自驾之旅</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">6980<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">9天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">重庆一金边一西哈努克港一暹粒</li>
+									<li class="container-word">柬埔寨金边暹粒西港自驾之旅<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">重庆迦南自驾俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="second-pic-two">
+					<div class="second-pic-two-1">
+						<div class="second-pic-two-1-1">
+							<ul class="container-top">
+								<a href="#"><li>加州一号公路+夏威夷浪漫自驾之旅</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">18800<span>起</span></li>
+									<li class="day">2015-02-11出发</li>
+									<li class="date">12天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">旧金山一文图拉一洛杉矶一檀香山</li>
+									<li class="container-word">加州一号公路 + 夏威夷欧胡岛大环岛</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">七十迈国际自驾</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second-pic-two-2">
+						<div class="second-pic-two-2-1">
+							<ul class="container-top">
+								<a href="#"><li>澳洲莫宁顿半岛及大洋路自驾之旅</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">23980<span>起</span></li>
+									<li class="day">2015-12-30出发</li>
+									<li class="date">10天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">上海一墨尔本一莫宁顿半岛一华南府</li>
+									<li class="container-word">饱览大自然美景 , 感受澳洲人的活力和闲适<span>。</span></li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">爱车环球自驾</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second-pic-two-3">
+						<div class="second-pic-two-3-1">
+							<ul class="container-top">
+								<a href="#"><li>越南下龙湾吉婆岛7日自驾</li></a>
+								
+							</ul>
+						</div>
+						<div class="class=container-start">
+							<div class="container-start-one">
+								<ul>
+									<li class="money">2580<span>起</span></li>
+									<li class="day">2015-02-07出发</li>
+									<li class="date">7天</li>
+								</ul>
+							</div>
+							<div class="container-center">
+								<ul>
+									<li class="container-city">重庆一南宁一下龙湾一吉婆岛一河内</li>
+									<li class="container-word">探访世界自然遗产之一海上桂林下龙湾</li>
+								</ul>	
+							</div>
+							<div class="container-bottom">
+								<a href="#"><p class="container-add">重庆迦南自驾俱乐部</p></a>
+								
+								<ul class="container-review">
+									<li class="container-browes"><img class="container-browes-pic" src="images/tourism/2.gif"><span class="container-browes-num">36</span></li>
+									<li class="container-laud"><img class="container-laud-pic" src="images/2.png"><span class="container-laud-num">0</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-list">
+			<ul>
+				<li><a href="#">人民交通出版社</a></li>
+				<li><a href="#">爱自驾</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<span>人民交通出版社股份有限公司</span>
+			<span>京ICP备15018898号－1</span>
+			<span>开发团队 排雷组</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="script/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="script/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="script/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="script/modal.js"></script>
+
+	<script type="text/javascript">
+		// 图片轮播
+	$(".banner-pic").cycle({
+		before:function(){
+			var index = $(this).index();
+			$(".banner-one-pic2 li").eq(index).css({"background-color":"#50bbdb","width":"22px","height":"22px"}).siblings().css({"background-color":"#fff","width":"20px","height":"20px"})
+		}
+	})
+	$(".banner-one-pic2 li").click(function(){
+		var index = $(this).index();
+		$(".banner-pic").cycle(index);
+	})
+	// 点击加
+	$(".container-browes-pic").click(function(){
+		var num = $(this).next().text();
+		if(num==36){
+			$(this).next().text(37);
+		}else if(num==37){
+			$(this).next().text(36);
+		}
+	});
+	$(".container-laud-pic").click(function(){
+		var num = $(this).next().text();
+		if(num==0){
+			$(this).next().text(1)
+			$(this).attr("src","images/1.png")
+		}else if(num==1){
+			$(this).next().text(0)
+			$(this).attr("src","images/2.png")
+		}
+	});
+	// 城市切换
+	var oBtn = document.getElementById("list-3-change")
+	var oCity = document.getElementById("change-city")
+	oBtn.onclick = function(){
+		oCity.style.display = "block";
+	}
+	document.body.onclick = function(e){
+		// e = e || window.event;
+		var target = e.target || e.srcElement;
+		if(target!=oBtn){
+			oCity.style.display = "none";
+		};
+	}
+	$("#change-city li").click(function(){
+		var text = $(this).text();
+		$("#list-2-city").text(text);
+	})
+	$(".bgc-list-1").mouseenter(function(){
+		$(this).attr("src","images/topico1a.png")
+	})
+	$(".bgc-list-1").mouseleave(function(){
+		$(this).attr("src","images/tourism/nav-location.png")
+	})
+	$(".bgc-list-4").mouseenter(function(){
+		$(this).attr("src","images/topico2a.png")
+	})
+	$(".bgc-list-4").mouseleave(function(){
+		$(this).attr("src","images/tourism/nav-phone.png")
+	})
+	$(".pic-list-1").mouseenter(function(){
+		$(this).attr("src","images/topico3a.png")
+	})
+	$(".pic-list-1").mouseleave(function(){
+		$(this).attr("src","images/topico3.png")
+	})
+	$(".pic-list-2").mouseenter(function(){
+		$(this).attr("src","images/topico4a.png")
+	})
+	$(".pic-list-2").mouseleave(function(){
+		$(this).attr("src","images/tourism/nav-sina.png")
+	})
+	// 模态框
+	$('#myModal').on('shown.bs.modal',function(){
+				// $('#myInput').focus()
+		});
+    $('#signIn').on('shown.bs.modal',function(){
+        // $('#myInput').focus()
+    });
+    // 城市跳转
+    $(".search-text-pic").click(function(){
+    	var value = $(".search-text-btn").val();
+    	console.log(value)
+    	if(value=="北京"){
+    		window.location.href="domestic-list.html"
+    	}else if(value == "南京"){
+    		window.location.href="domestic-list.html"
+    	}else if(value == "温泉"){
+    		window.location.href="other-search.html"
+    	}
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@font-face{
+	font-family: myFont;
+	src:url(../fonts/STHeiti-Light.ttc);
+}
+.clearfix:before,.clearfix:after{
+	display: block;
+	content:"";
+	clear: both;
+}
+#wrap header{
+	width: 100%;
+}
+.top{
+	background-color: #50bbdb;
+	/*line-height: 0.88rem;*/
+}
+.top-one{
+	width: 9.0625%; /*58*/
+	text-decoration:none;
+	text-align: center;
+	line-height: 0.58rem;
+}
+.top-one img{
+	width: 100%
+}
+.top-one-1{
+	margin:0.16rem 0 0.16rem 0.14rem ;
+	float: left;
+}
+.top-one-2{
+	margin:0.16rem 0.14rem 0.16rem 0 ;
+	float:right;
+}
+.top span{
+	line-height: 0.88rem;
+	margin: 0 0.06rem;
+	float: left;
+	display:block;
+	font-size: 0.18rem;
+	font-family: myFont;
+	color: #fff;
+}
+.top ul{
+	width: 52.0325%;
+	margin-top: 0.25rem;
+	border: 1px solid #fff;
+	border-radius:0.06rem; 
+	float: left;
+}
+.top ul li{
+	float: left;
+	list-style: none;
+	font-size: 0.26rem;
+	font-family: myFont;
+	padding-left: 0.35rem;	
+	color: #50bbdb;
+	background-color: #fff;
+}
+.top ul li:last-child{
+	padding-left: 0.6rem;
+	color: #fff;
+	background-color: #50bbdb;
+}
+.top ul li a{
+	width: 4.7619%;
+	text-decoration: none;
+	padding-left: 0.34rem;
+	/*padding-top: 0.08rem;*/
+}
+.top ul li a img{
+	margin-right: 0.04rem;
+	margin-top: 0.25rem;
+}
+#wrap header section{
+	/*margin-top: -0.5rem;*/
+	/*z-index: 1;*/
+}
+section .pic{
+	width: 100%;
+}
+section .swiper-btn{
+	width: 0.28rem;
+	height: 0.48rem;
+}
+.form{
+	width: 62.5%;
+	margin: 0 auto;
+	border: 1px solid #50bbdb;
+	position: absolute;
+	z-index: 99;
+	top:1.05rem;
+	left:21%;
+}
+.val{
+	width: 90%;
+	line-height: 0.44rem;
+	display: block;
+	float:left;
+	border:none;
+	outline:medium;
+	background-color:transparent;
+}
+.btn{
+	margin-top: 0.1rem;
+	padding: 0rem;
+	float:left;
+	display: block;
+	width: 0.28rem;
+	height: 0.28rem;
+	border:none;
+	outline:medium;
+	background-position: 0 center;
+	background-color:transparent;
+}
+.icon-1{
+	color: #50bbdb;
+	font-size: 0.26rem;
+}
+.down{
+	width: 74.375%;
+	margin: 0.3rem auto;
+}
+.down span{
+	
+	width: 25.4%;
+	display: inline-block;
+	font-family: myFont;
+	font-size:0.28rem;
+	color: #999999;
+	line-height: 1.24rem;
+	text-align: center;
+	border: 1px solid #cccccc;
+	border-radius: 1.24rem;
+}
+
+.content-up-one{
+	margin-top: 0.1rem;
+	width: 100%;
+}
+.content-up-one img{
+	width: 100%;
+	margin-top: -0.5rem;
+}
+.content-up-one p:first-child{
+	line-height: 0.46rem;
+	background-color: #8d8b87;
+	padding-left: 0.3rem;
+	opacity: 0.5;
+	font-family: myFont;
+	font-size: 0.24rem;
+	color: #fff;
+}
+.content-up-one p:nth-child(3){
+	margin-top: -0.33rem;
+	line-height: 0.34rem;
+	background-color: #8f8f8f;
+	padding-left: 0.3rem;
+	opacity: 0.7;
+	font-family: myFont;
+	font-size: 0.2rem;
+	color: #fff;
+	overflow: hidden;
+}
+.content-up-one div{
+	width: 15.9375%;
+	line-height:0.5rem;
+	border:0.04rem solid #fff;
+	background-color: #eb6417;
+	border-radius:0.6rem 0.6rem 0 0;
+	text-align: center;
+	position: relative;
+	float: right;
+	margin-top: -0.56rem;
+}
+.content-up-one div span{
+	font-size: 0.18rem;
+	color: #fff;
+	/*vertical-align:baseline;*/
+}
+.content-up-one div .word{
+	font-size: 0.1rem;
+}
+.content-down{
+	margin-top: 0.1rem;
+	display:block;
+	font-size: 0.2rem;
+	text-decoration: none;
+	line-height: 0.68rem;
+	text-align: center;
+	background-color: #f1f1f1;
+	color: #666666;
+}
+footer a{
+	
+	display:block;
+	float: left;
+	width:20.9375%;
+	margin-right: 0.26rem;
+	text-decoration: none;
+	text-align: center;	
+	margin-top: -0.4rem;
+	margin-bottom: 0.16rem;
+}
+.icon-two{
+	font-size: 0.46rem;
+	vertical-align: bottom;
+	color: #b2b2b2;
+}
+footer a p{
+	font-size:0.2rem;
+	font-family: myFont; 
+	color: #333333;
+}
+footer{
+	/*height: 1.88rem;*/
+	background-color: #0f0;
+}
