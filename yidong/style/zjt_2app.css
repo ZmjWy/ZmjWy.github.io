@@ -7,6 +7,9 @@
 	content:"";
 	clear: both;
 }
+a{
+	text-decoration: none;
+}
 #wrap header{
 	width: 100%;
 }

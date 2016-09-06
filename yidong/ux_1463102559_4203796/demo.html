@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont">&#xe67f;</i>
+                    <div class="name">收藏</div>
+                    <div class="code">&amp;#xe67f;</div>
+                    <div class="fontclass">.shoucang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe600;</i>
+                    <div class="name">手机</div>
+                    <div class="code">&amp;#xe600;</div>
+                    <div class="fontclass">.phone</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe629;</i>
+                    <div class="name">个人 (8)</div>
+                    <div class="code">&amp;#xe629;</div>
+                    <div class="fontclass">.geren8</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe74b;</i>
+                    <div class="name">地图</div>
+                    <div class="code">&amp;#xe74b;</div>
+                    <div class="fontclass">.iconfont82</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe603;</i>
+                    <div class="name">主页</div>
+                    <div class="code">&amp;#xe603;</div>
+                    <div class="fontclass">.zhuye</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe6d3;</i>
+                    <div class="name">纸飞机_线</div>
+                    <div class="code">&amp;#xe6d3;</div>
+                    <div class="fontclass">.zhifeijixian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#x343b;</i>
+                    <div class="name">搜索</div>
+                    <div class="code">&amp;#x343b;</div>
+                    <div class="fontclass">.sousuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf000a;</i>
+                    <div class="name">搜索</div>
+                    <div class="code">&amp;#xf000a;</div>
+                    <div class="fontclass">.sousuo1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe64b;</i>
+                    <div class="name">相机</div>
+                    <div class="code">&amp;#xe64b;</div>
+                    <div class="fontclass">.xiangji</div>
+                </li>
+            
+        </ul>
+
+
+        <div class="helps">
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用iconfont的样式
+            <pre>
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>
